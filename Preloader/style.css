@@ -1,0 +1,42 @@
+#overlayer {
+    width:100%;
+    height:100%;  
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1999;
+    background: rgb(46,49,146);
+}
+
+.preloader-container{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    z-index: 2000;
+}
+
+.preloader {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    width: 80%;
+}
+
+.line2 {
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 0;
+  animation: construct 2s ease-in alternate 2;
+}
+
+@keyframes construct {
+    from {
+      stroke-dashoffset: 2500;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
